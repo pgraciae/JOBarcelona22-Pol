@@ -1,0 +1,16 @@
+## Task 1
+
+Realizar un análisis exploratorio de los datos. 
+
+Para realizar el análisis exploratorio de los datos se ha usado la herramienta de pandas 'pandas_prfiling', la cual ofrece una vision muy detallada de todos 
+los campos del dataset de test_x.
+De la información que nos muestra nos centraremos en:
+
+Tenemos 7001 observaciones, sin filas duplicadas ni valores null.
+
+Tenemos 10 variables distintas:
+
+Hour: es una variable numerica real.
+Minutes: 
+
+Por el histograma podemos ver que todas las variables 'sensor' siguen una distribución de sucesos normal y son variables de tipo numericas reales.
