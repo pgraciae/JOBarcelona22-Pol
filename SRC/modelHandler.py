@@ -28,11 +28,12 @@ class ModelHandler(Utils):
         'max_features': ['auto', 'sqrt', 'log2'],
         'splitter': ['best', 'random'],
     }, 'XGB': {
-        'min_child_weight': [1, 5],
+    	'booster': ['gbtree', 'gblinear','dart'],
+        'min_child_weight': [0.5, 1, 3, 5, 10],
         'gamma': [0.5, 1, 2, 5],
         'subsample': [0.6, 0.8, 1.0],
-        'colsample_bytree': [0.6, 0.8, 1.0],
-        'max_depth': [3, 4]
+        'colsample_bytree': [0.5, 1.0, 2.0],
+        'max_depth': [4, 26, 32, 64 ]
     }}
 
     def __init__(self, X, Y, model: str, **kwargs):
