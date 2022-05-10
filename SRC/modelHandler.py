@@ -28,7 +28,7 @@ class ModelHandler(Utils):
         'max_features': ['auto', 'sqrt', 'log2'],
         'splitter': ['best', 'random'],
     }, 'XGB': {
-    	'booster': ['gbtree', 'gblinear','dart'],
+    	'booster': ['gbtree', 'gblinear'],
         'min_child_weight': [0.5, 1, 3, 5, 10],
         'gamma': [0.5, 1, 2, 5],
         'subsample': [0.6, 0.8, 1.0],
